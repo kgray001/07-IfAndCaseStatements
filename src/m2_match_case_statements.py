@@ -65,4 +65,6 @@ def grade():
             print("You recieved a(n) D.")
         case _ if grade < 0.6:
             print("You recieved a(n) F.")
+        case _:
+            print("Invalid Score!")
 grade()
