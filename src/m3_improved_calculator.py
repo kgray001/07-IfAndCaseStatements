@@ -1,5 +1,21 @@
+def add(num1, num2):
+    result = num1 + num2
+    return result
+
+def subtract(num1, num2):
+    result = num1 - num2
+    return result
+
+def multiply(num1, num2):
+    result = num1*num2
+    return result
+
+def divide(num1, num2):
+    result = num1 / num2
+    return result
+
 ###############################################################################
-# TODO: 1. (4 pts)
+# DONE: 1. (4 pts)
 #
 #   In this module, we will improve upon the calculator that we built in the
 #   Session 5 coding exercises.
@@ -39,9 +55,25 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def if_calc():
+    print("Hello! Today is a beauuuutiful day!")
+    num1 = float(input("What would you like your first number to be?"))
+    num2 =  float(input("What would you like your second number to be?"))
+    operator = input("(+) Add\n(-) Subtract\n(*) Multiply\n(/) Division\nWhich operator would you like to use?")
+    if "+" == operator:
+        print(add(num1, num2))
+    elif "-" == operator:
+        print(subtract(num1, num2))
+    elif "*" == operator:
+        print(multiply(num1, num2))
+    elif ("/") == operator:
+        print(divide(num1, num2))
+    else:
+        print("Invalid Operation!")
+if_calc()
 
 ###############################################################################
-# TODO: 2. (4 pts)
+# DONE: 2. (4 pts)
 #
 #   Now, do the same thing that you did in _TODO_ 1, but this time, use case
 #   statements in your solution instead of if statements.
@@ -51,3 +83,18 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def case_calc():
+    print("Hello! Today is a beauuuutiful day!")
+    num1 = float(input("What would you like your first number to be?"))
+    num2 =  float(input("What would you like your second number to be?"))
+    operator = input("(+) Add\n(-) Subtract\n(*) Multiply\n(/) Division\nWhich operator would you like to use?")
+    match operator:
+        case "+":
+            print(add(num1, num2))
+        case "-":
+            print(subtract(num1,num2))
+        case "*":
+            print(multiply(num1, num2))
+        case "/":
+            print(divide(num1, num2))
+case_calc()
