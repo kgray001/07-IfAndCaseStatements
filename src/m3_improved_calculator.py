@@ -70,6 +70,8 @@ def if_calc():
         print(divide(num1, num2))
     else:
         print("Invalid Operation!")
+    print("Goodbye!")
+
 if_calc()
 
 ###############################################################################
@@ -97,4 +99,5 @@ def case_calc():
             print(multiply(num1, num2))
         case "/":
             print(divide(num1, num2))
+    print("Goodbye!")
 case_calc()
