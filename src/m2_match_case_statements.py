@@ -27,6 +27,8 @@ def color_picker():
             print("Such a good color! You chose purple!")
         case "green":
             print("Beautiful color! You chose green!")
+        case "orange":
+            print("Yay! You picked orange.")
         case other:
             print("Unknown Color!")
 
